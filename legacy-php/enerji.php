@@ -1,0 +1,102 @@
+<?php 
+$page_title = "Enerji Sektörü"; 
+$page_id = "enerji";
+$parent_page_id = "faaliyetler";
+include 'header.php'; 
+?>
+
+    <div class="page-hero">
+        <div class="container">
+            <h1 class="clash">Enerji Sektörü</h1>
+            <p>Gelecek nesillere temiz bir dünya bırakmak için yenilenebilir ve sürdürülebilir enerji üretiyoruz.</p>
+        </div>
+    </div>
+
+    <!-- Intro Section -->
+    <section class="about-intro-section" style="background: var(--gray-bg);">
+        <div class="container">
+            <div class="about-intro-grid">
+                <div class="about-intro-content">
+                    <span style="color: var(--primary); font-weight: 700; letter-spacing: 1px; font-size: 14px; text-transform: uppercase;">B.Kaya Elektrik Üretim A.Ş.</span>
+                    <h2 style="margin-top: 10px;">Kesintisiz ve Sürdürülebilir Güç</h2>
+                    <p>B.Kaya Elektrik Üretim A.Ş., Kaya Holding’in enerji alanındaki geleceğe dönük vizyonunu hayata geçirmek amacıyla kurulmuştur. Şirketin öncelikli amacı, çevre dostu yaklaşımlarla Kaya Holding bünyesindeki tesislere sürdürülebilir ve kesintisiz enerji sağlamaktır.</p>
+                    <p>B.Kaya Elektrik Üretim A.Ş., elektrik enerjisi üretim faaliyetlerini mevcut mevzuata uygun şekilde yürütmekte olup; rüzgar ve güneş başta olmak üzere elektrik üretim tesislerinin kurulması, işletmeye alınması, enerji üretimi ve satışı konularında aktif olarak faaliyet göstermektedir.</p>
+                </div>
+                <div class="about-intro-image">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80" alt="Kaya Holding Enerji Vizyonu">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="sector-detail-stats">
+        <div class="container">
+            <div class="sector-stats-grid">
+                <div class="sector-stat-item">
+                    <h4>120 MW</h4>
+                    <p>Toplam Kurulu Güç</p>
+                </div>
+                <div class="sector-stat-item">
+                    <h4>150.000+</h4>
+                    <p>Kurulu Güneş Paneli</p>
+                </div>
+                <div class="sector-stat-item">
+                    <h4>45.000</h4>
+                    <p>Ton Karbon Azaltımı / Yıl</p>
+                </div>
+                <div class="sector-stat-item">
+                    <h4>%100</h4>
+                    <p>Öz Tüketim Karşılama Hedefi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands & Services Section (Enerji Projeleri Demo Content) -->
+    <section class="services-section">
+        <div class="container">
+            
+            <!-- Project 1: GES -->
+            <div class="service-row">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Güneş Enerjisi Santralleri">
+                </div>
+                <div class="service-content">
+                    <span class="service-tag">Yenilenebilir Enerji</span>
+                    <h3>Güneş Enerjisi Santralleri (GES)</h3>
+                    <p>Güneşin tükenmez gücünü teknolojiyle buluşturuyor, özellikle turizm tesislerimizin çatılarında ve geniş arazi yatırımlarında kurduğumuz Güneş Enerjisi Santralleri (GES) ile sıfır emisyonlu enerji üretiyoruz.</p>
+                    <p>Hem doğayı koruyor hem de grubumuzun operasyonel enerji maliyetlerini minimize ederek sürdürülebilir büyüme adımlarımızı güvence altına alıyoruz.</p>
+                </div>
+            </div>
+
+            <!-- Project 2: RES -->
+            <div class="service-row">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80" alt="Rüzgar Enerjisi Santralleri">
+                </div>
+                <div class="service-content">
+                    <span class="service-tag">Temiz Gelecek</span>
+                    <h3>Rüzgar Enerjisi Santralleri (RES)</h3>
+                    <p>Temiz enerji yatırımlarımız kapsamında rüzgar gücünü elektrik enerjisine çeviren modern rüzgar türbinleriyle ulusal enerji şebekesine katkı sağlıyoruz.</p>
+                    <p>Fosil yakıtlara olan bağımlılığı azaltma hedefimiz doğrultusunda, rüzgar enerjisi projelerimiz bölgesel istihdam yaratırken ülkemizin enerji bağımsızlığına da katma değer sunmaktadır.</p>
+                </div>
+            </div>
+
+            <!-- Project 3: Sürdürülebilirlik -->
+            <div class="service-row">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=800&q=80" alt="Sürdürülebilirlik ve Akıllı Şebeke">
+                </div>
+                <div class="service-content">
+                    <span class="service-tag">Enerji Verimliliği</span>
+                    <h3>Akıllı Enerji Yönetimi ve Sürdürülebilirlik</h3>
+                    <p>Üretimin yanı sıra tüketimde de verimliliği merkeze alıyor; holding bünyesindeki otel, fabrika ve inşaat projelerinde akıllı enerji izleme sistemleri (Smart Grid) kullanıyoruz.</p>
+                    <p>Kaya Holding’in "Sıfır Karbon" vizyonu paralelinde, enerjinin her watt’ını takip ederek israfı önlüyor ve maksimum çevresel fayda sağlıyoruz.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<?php include 'footer.php'; ?>

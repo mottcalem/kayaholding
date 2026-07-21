@@ -1,0 +1,105 @@
+<?php 
+$page_title = "Kurumsal Politikalar"; 
+$page_id = "politikalar";
+$parent_page_id = "kurumsal";
+include 'header.php'; 
+?>
+
+    <div class="page-hero">
+        <div class="container">
+            <h1 class="clash">Kurumsal Politikalar</h1>
+            <p>Kaya Holding olarak tüm faaliyetlerimizi; etik değerlere bağlı, sürdürülebilir, şeffaf ve sorumlu bir yönetim anlayışıyla yürütüyor, paydaşlarımız için uzun vadeli değer yaratmayı hedefliyoruz.</p>
+        </div>
+    </div>
+
+    <section class="policy-section">
+        <div class="container">
+            <div class="policy-layout">
+                
+                <!-- Yapışkan Yan Menü -->
+                <aside class="policy-sidebar">
+                    <nav class="policy-nav" id="policy-nav">
+                        <a href="#ik-politikasi" class="active">İnsan Kaynakları Politikası</a>
+                        <a href="#sosyal-sorumluluk">Sosyal Sorumluluk Politikası</a>
+                        <a href="#cevre-politikasi">Çevreye Duyarlılık Politikası</a>
+                        <a href="#kalite-politikasi">Kalite Politikası</a>
+                    </nav>
+                </aside>
+
+                <!-- Ana İçerik Alanı -->
+                <main class="policy-content">
+                    
+                    <!-- IK Politikası -->
+                    <article id="ik-politikasi" class="policy-article">
+                        <h2>İnsan Kaynakları Politikası</h2>
+                        <p>Kaya Holding olarak başarımızın temelinde yatan en değerli varlığımızın çalışanlarımız olduğuna inanıyoruz. Yenilikçi, dinamik ve aidiyet duygusu yüksek bir kurum kültürü yaratarak; şeffaf, adil ve sürdürülebilir bir çalışma ortamı sunmak en büyük önceliğimizdir.</p>
+                        <ul>
+                            <li><strong>Fırsat Eşitliği:</strong> Tüm işe alım, atama ve terfi süreçlerimizde dil, din, ırk, cinsiyet ayrımı gözetmeksizin liyakat esaslı eşit fırsatlar sunarız.</li>
+                            <li><strong>Sürekli Gelişim:</strong> Çalışanlarımızın değişen küresel rekabet ortamına uyum sağlaması için mesleki ve kişisel gelişimlerini sürekli eğitim programlarıyla destekleriz.</li>
+                            <li><strong>İş Sağlığı ve Güvenliği:</strong> Faaliyet gösterdiğimiz tüm sektörlerde uluslararası standartlarda, sıfır iş kazası hedefiyle güvenli ve sağlıklı bir çalışma ortamı sağlarız.</li>
+                            <li><strong>Performans ve Ödüllendirme:</strong> Verimliliği artırmak amacıyla, ölçülebilir ve şeffaf performans değerlendirme sistemleriyle başarıyı ödüllendiririz.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Sosyal Sorumluluk Politikası -->
+                    <article id="sosyal-sorumluluk" class="policy-article">
+                        <h2>Sosyal Sorumluluk Politikası</h2>
+                        <p>Kaya Holding, iş dünyasındaki başarısını topluma karşı duyduğu sorumluluk bilinciyle tamamlayan bir kurumdur. Kurumsal vatandaşlık yaklaşımımızla; eğitimden çevreye, kültür-sanattan sosyal dayanışmaya kadar birçok alanda sürdürülebilir projeler geliştiriyor, toplumsal refahın artırılmasına uzun vadeli katkı sağlamak başlıca hedefimizdir.</p>
+                        <ul>
+                            <li><strong>Çocuk Hakları:</strong> Kaya Holding olarak çocukların güvenli, sağlıklı ve destekleyici ortamlarda büyüme hakkını temel bir sorumluluk olarak görüyoruz. Tüm faaliyetlerimizde çocuk haklarına saygılı bir yaklaşım benimsiyor; çocuk işçiliği, ihmal ve istismara karşı sıfır tolerans ilkesiyle hareket ediyoruz. Çalışanlarımızı, iş ortaklarımızı ve paydaşlarımızı bu konuda bilinçlendirmeye önem veriyor; çocukların korunmasına yönelik farkındalık çalışmalarını destekliyoruz. Geleceğin en değerli emaneti olan çocukların haklarını korumayı, sürdürülebilir toplum anlayışımızın vazgeçilmez bir parçası olarak görüyoruz.</li>
+                            <li><strong>Kadın Hakları ve Fırsat Eşitliği:</strong> Kaya Holding olarak kadınların iş yaşamında, toplumda ve karar alma süreçlerinde eşit haklara sahip olmasını sürdürülebilir kalkınmanın önemli bir unsuru olarak görüyoruz. İşe alım, kariyer gelişimi, eğitim, ücretlendirme ve liderlik fırsatlarında eşitlik ilkesini benimsiyoruz. Her türlü ayrımcılık, şiddet, taciz ve dışlayıcı davranışa karşı güvenli ve saygılı çalışma ortamları oluşturmayı önemsiyoruz. Kadınların güçlenmesini destekleyen kapsayıcı kurum kültürümüzle, daha adil ve daha güçlü bir gelecek için çalışıyoruz.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Çevreye Duyarlılık Politikası -->
+                    <article id="cevre-politikasi" class="policy-article">
+                        <h2>Çevreye Duyarlılık Politikası</h2>
+                        <p>Kaya Holding olarak, yarım asırlık büyümemizi doğaya ve çevreye saygı çerçevesinde şekillendiriyoruz. Gelecek nesillere yaşanabilir bir dünya bırakmak vizyonuyla, operasyonlarımızın çevresel etkilerini uluslararası uyumluluk yasalarıyla en aza indiriyoruz.</p>
+                        <ul>
+                            <li><strong>Enerji ve İklim Yönetimi:</strong> Kaya Holding olarak iklim değişikliğiyle mücadeleyi kurumsal sorumluluğumuzun önemli bir parçası olarak görüyoruz. Enerji verimliliğini artıran uygulamalar, yenilikçi teknolojiler ve kaynak kullanımını optimize eden çalışmalarla çevresel etkimizi azaltmayı hedefliyoruz. Sera gazı emisyonlarımızı azaltmaya yönelik adımlar atıyor, enerji yönetimini tüm operasyonlarımızda sürdürülebilirlik anlayışıyla ele alıyoruz. Daha düşük çevresel etkiyle faaliyet göstermek ve gelecek nesillere daha yaşanabilir bir dünya bırakmak için çalışıyoruz.</li>
+                            <li><strong>Karbon Nötr Oda:</strong> Kaya Holding olarak otellerimizde, sürdürülebilir turizm anlayışını misafir deneyiminin ayrılmaz bir parçası olarak görüyoruz. Hayata geçirdiğimiz Karbon Nötr Oda uygulaması ile misafirlerimize, konaklamalarından kaynaklanan karbon ayak izini gönüllü olarak dengeleme imkânı sunuyoruz. Bu uygulama sayesinde çevresel sorumluluğu yalnızca operasyonlarımızda değil, misafirlerimizle birlikte sahipleniyor; iklim değişikliğiyle mücadeleye somut katkı sağlıyoruz. Daha yaşanabilir bir gelecek için sürdürülebilir çözümler geliştirmeye ve çevreye duyarlı uygulamalarımızı kararlılıkla yaygınlaştırmaya devam ediyoruz.</li>
+                            <li><strong>Biyoçeşitlilik ve Doğal Yaşamın Korunması:</strong> Kaya Holding olarak biyolojik çeşitliliğin korunmasını, doğaya karşı sorumluluğumuzun önemli bir parçası olarak görüyoruz. Faaliyet gösterdiğimiz bölgelerde doğal yaşam alanlarını korumaya, yerel bitki ve canlı türlerinin sürdürülebilirliğini desteklemeye ve çevresel etkilerimizi azaltmaya yönelik çalışmalar yürütüyoruz. Peyzaj uygulamalarımızda bölgenin doğal yapısına uyumlu türleri tercih ediyor, doğal kaynakların bilinçli kullanımını destekliyoruz. Doğanın zenginliğini korumayı yalnızca bugünün değil, gelecek nesillere bırakacağımız en değerli miraslardan biri olarak görüyoruz.</li>
+                            <li><strong>Atık Yönetimi ve Döngüsel Ekonomi:</strong> Kaya Holding olarak atıkların azaltılmasını, kaynakların verimli kullanılmasını ve geri dönüşüm süreçlerinin güçlendirilmesini sürdürülebilirlik yaklaşımımızın önemli bir parçası olarak görüyoruz. Otellerimizde atık oluşumunu kaynağında azaltmaya, ayrıştırma ve geri kazanım süreçlerini geliştirmeye yönelik uygulamalar yürütüyoruz. Döngüsel ekonomi anlayışıyla kaynakların yaşam döngüsünü uzatmayı, israfı önlemeyi ve çevresel etkimizi en aza indirmeyi hedefliyoruz. Doğaya karşı sorumluluğumuzu her alanda daha bilinçli uygulamalarla güçlendirmeye devam ediyoruz.</li>
+                            <li><strong>Yeşil Otel Uygulamaları:</strong> Kaya Holding olarak otellerimizde, konforlu misafir deneyimini doğaya saygılı uygulamalarla bir arada sunmayı önemsiyoruz. Enerji ve su verimliliği, atık yönetimi, geri dönüşüm, sürdürülebilir satın alma ve kaynakların bilinçli kullanımı gibi alanlarda çevresel etkimizi azaltmaya yönelik çalışmalar yürütüyoruz. Yeşil Otel yaklaşımımızla yalnızca bugünün ihtiyaçlarına değil, gelecek nesillerin yaşam hakkına da sorumlulukla yaklaşıyoruz. Doğal kaynakları koruyan, çevreye duyarlı ve sürdürülebilir turizmi destekleyen uygulamalarımızı her geçen gün geliştirmeye devam ediyoruz.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Kalite Politikası -->
+                    <article id="kalite-politikasi" class="policy-article">
+                        <h2>Kalite Politikası</h2>
+                        <p>Müşteri ve paydaşlarımızın beklentilerini en üst düzeyde karşılamak, yenilikçi ve sürekli iyileştirme prensibiyle çalışmak kurumsal kalite anlayışısının temelidir. Tüm sektörlerde, dünya standartlarında hizmet sunmayı taahhüt ediyoruz.</p>
+                        <ul>
+                            <li><strong>Çalışan Gelişimi ve İnsana Yatırım:</strong> Kaya Holding olarak en değerli kaynağımızın insan olduğuna inanıyoruz. Çalışanlarımızın mesleki gelişimlerini destekleyen eğitimler, kariyer fırsatları ve sürekli öğrenme kültürüyle güçlü bir kurum yapısı oluşturuyoruz. Katılımcı, adil ve saygılı çalışma ortamlarıyla çalışanlarımızın potansiyellerini ortaya koymalarını destekliyoruz. Kurumsal başarımızı, çalışanlarımızın gelişimi ve birlikte ürettiğimiz değerlerle sürdürülebilir kılmayı hedefliyoruz.</li>
+                            <li><strong>Sorumlu Tedarik Zinciri:</strong> Kaya Holding olarak sürdürülebilirliğin yalnızca kendi faaliyetlerimizle sınırlı olmadığına inanıyoruz. Bu nedenle tedarikçilerimizi kalite, çevre, iş sağlığı ve güvenliği, insan hakları ve etik ticaret ilkeleri doğrultusunda değerlendiriyoruz. Yerel üreticileri desteklemeye, güvenilir ve sürdürülebilir ürün kullanımını artırmaya, sorumlu satın alma anlayışını tüm tedarik zincirimize yaygınlaştırmaya önem veriyoruz. Değerlerimizi paylaşan iş ortaklarıyla uzun vadeli ve güvene dayalı ilişkiler kurmaya devam ediyoruz.</li>
+                        </ul>
+                    </article>
+
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sayfaya Özel Kaydırma (Scroll-Spy) Scripti -->
+    <script>
+        const sections = document.querySelectorAll('.policy-article');
+        const navLinks = document.querySelectorAll('.policy-nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+<?php include 'footer.php'; ?>

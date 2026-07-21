@@ -1,0 +1,61 @@
+<div class="page-hero">
+        <div class="container">
+            <h1 class="clash">İletişim</h1>
+            <p>Görüş, öneri ve bilgi talepleriniz için form doldurabilir veya direkt olarak ofis ve tesislerimizle iletişime geçebilirsiniz.</p>
+        </div>
+    </div>
+
+    <!-- Form & Map Section -->
+    <section class="contact-main-section">
+        <div class="container">
+            <div class="contact-layout-grid">
+                
+                <!-- Contact Form (Kariyer sayfasındaki uyumlu kutu) -->
+                <div class="app-form-box" style="border: 1px solid var(--border); padding: 40px; border-radius: 24px; box-shadow: 0 15px 35px rgba(0,0,0,0.03);">
+                    <h3>İletişim Formu</h3>
+                    <p>Size daha hızlı yardımcı olabilmemiz için lütfen formu eksiksiz doldurunuz.</p>
+                    
+                    <form action="#" method="POST">
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="name">Ad Soyad / Kurum Ünvanı</label>
+                                <input type="text" id="name" name="name" required placeholder="Adınız, Soyadınız veya Kurumunuz">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Posta Adresi</label>
+                                <input type="email" id="email" name="email" required placeholder="ornek@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon Numarası</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="subject">Konu</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Hangi konuda iletişime geçiyorsunuz?">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Mesajınız</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Mesajınızı detaylı şekilde yazabilirsiniz..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: 100%; justify-content: center; padding: 20px; font-size: 16px;">Mesajı Gönder &rarr;</button>
+                    </form>
+                </div>
+
+                <!-- Google Map -->
+                <div class="contact-map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.8878564883477!2d29.0435133!3d41.1370211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5b64c01d46b%3A0xc3fce7e0de969f65!2zS2lyZcOnYnVybHUsIEhheWRhciBBbGl5ZXYgQ2QuIE5vOjQ2LCAzNDQ1NyBTYXLEsXllci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1714470000000!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations (tabs: offices & hotels) -->
+    <section class="locations-section">
+        <div class="container">
+            <h2 class="section-title">İletişim Noktalarımız</h2>
+            <div id="contact-locations-mount"></div>
+        </div>
+    </section>

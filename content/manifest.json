@@ -1,0 +1,128 @@
+{
+  "404": {
+    "title": "Sayfa Bulunamadı",
+    "pageId": "404",
+    "parentPageId": "",
+    "route": "/404",
+    "hasScripts": false
+  },
+  "enerji": {
+    "title": "Enerji Sektörü",
+    "pageId": "enerji",
+    "parentPageId": "faaliyetler",
+    "route": "/enerji",
+    "hasScripts": false
+  },
+  "haber-detay": {
+    "title": "Haber Detayı",
+    "pageId": "haber-detay",
+    "parentPageId": "",
+    "route": "/haber-detay",
+    "hasScripts": false
+  },
+  "haberler": {
+    "title": "Bizden Haberler",
+    "pageId": "haberler",
+    "parentPageId": "",
+    "route": "/haberler",
+    "hasScripts": false
+  },
+  "hakkimizda": {
+    "title": "Hakkımızda",
+    "pageId": "hakkimizda",
+    "parentPageId": "kurumsal",
+    "route": "/hakkimizda",
+    "hasScripts": false
+  },
+  "hizmet": {
+    "title": "Hizmet Sektörü",
+    "pageId": "hizmet",
+    "parentPageId": "faaliyetler",
+    "route": "/hizmet",
+    "hasScripts": false
+  },
+  "iletisim": {
+    "title": "İletişim",
+    "pageId": "iletisim",
+    "parentPageId": "",
+    "route": "/iletisim",
+    "hasScripts": true
+  },
+  "index": {
+    "title": "Ana Sayfa",
+    "pageId": "index",
+    "parentPageId": "",
+    "route": "/",
+    "hasScripts": false
+  },
+  "insaat-gayrimenkul": {
+    "title": "İnşaat ve Gayrimenkul",
+    "pageId": "insaat-gayrimenkul",
+    "parentPageId": "faaliyetler",
+    "route": "/insaat-gayrimenkul",
+    "hasScripts": false
+  },
+  "kariyer": {
+    "title": "Kariyer",
+    "pageId": "kariyer",
+    "parentPageId": "",
+    "route": "/kariyer",
+    "hasScripts": false
+  },
+  "misyon-vizyon": {
+    "title": "Misyon ve Vizyon",
+    "pageId": "misyon-vizyon",
+    "parentPageId": "kurumsal",
+    "route": "/misyon-vizyon",
+    "hasScripts": false
+  },
+  "perakende": {
+    "title": "Perakende Sektörü",
+    "pageId": "perakende",
+    "parentPageId": "faaliyetler",
+    "route": "/perakende",
+    "hasScripts": false
+  },
+  "politikalar": {
+    "title": "Kurumsal Politikalar",
+    "pageId": "politikalar",
+    "parentPageId": "kurumsal",
+    "route": "/politikalar",
+    "hasScripts": true
+  },
+  "sosyal-sorumluluk": {
+    "title": "Sosyal Sorumluluk",
+    "pageId": "sosyal-sorumluluk",
+    "parentPageId": "kurumsal",
+    "route": "/sosyal-sorumluluk",
+    "hasScripts": false
+  },
+  "statik": {
+    "title": "Gizlilik Politikası",
+    "pageId": "statik",
+    "parentPageId": "",
+    "route": "/statik",
+    "hasScripts": false
+  },
+  "tarim": {
+    "title": "Tarım Sektörü",
+    "pageId": "tarim",
+    "parentPageId": "faaliyetler",
+    "route": "/tarim",
+    "hasScripts": false
+  },
+  "turizm": {
+    "title": "Turizm",
+    "pageId": "turizm",
+    "parentPageId": "faaliyetler",
+    "route": "/turizm",
+    "hasScripts": false
+  },
+  "yonetim-kurulu": {
+    "title": "Yönetim Kurulu",
+    "pageId": "yonetim-kurulu",
+    "parentPageId": "kurumsal",
+    "route": "/yonetim-kurulu",
+    "hasScripts": false
+  }
+}
