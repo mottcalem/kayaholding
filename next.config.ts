@@ -3,6 +3,20 @@ import path from "path";
 
 const contentDir = path.join(process.cwd(), "content");
 
+/** Minimal type for dev-only webpack plugin (Next bundles webpack internally). */
+type ContentWatchCompiler = {
+  hooks: {
+    afterCompile: {
+      tap: (
+        name: string,
+        fn: (compilation: {
+          contextDependencies: { add: (dir: string) => void };
+        }) => void
+      ) => void;
+    };
+  };
+};
+
 const phpRoutes = [
   "hakkimizda",
   "misyon-vizyon",
@@ -27,7 +41,7 @@ const nextConfig: NextConfig = {
   webpack(config, { dev, isServer }) {
     if (dev && isServer) {
       config.plugins.push({
-        apply(compiler) {
+        apply(compiler: ContentWatchCompiler) {
           compiler.hooks.afterCompile.tap("WatchContentHtml", (compilation) => {
             compilation.contextDependencies.add(contentDir);
           });
