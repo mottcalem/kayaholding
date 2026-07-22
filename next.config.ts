@@ -21,6 +21,13 @@ const phpRoutes = [
 
 const nextConfig: NextConfig = {
   devIndicators: false,
+  webpack(config, { dev }) {
+    // Avoid corrupted .next/cache/webpack pack files during HMR (MODULE_NOT_FOUND / moduleId errors).
+    if (dev) {
+      config.cache = { type: "memory" };
+    }
+    return config;
+  },
   async redirects() {
     return [
       { source: "/index.php", destination: "/", permanent: true },
