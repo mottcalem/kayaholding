@@ -2,6 +2,7 @@ import type { NavContext } from "@/lib/navigation";
 
 const kurumsalIds = new Set([
   "hakkimizda",
+  "havacilik",
   "misyon-vizyon",
   "yonetim-kurulu",
   "politikalar",
@@ -20,6 +21,7 @@ const faaliyetIds = new Set([
 const pathToPageId: Record<string, string> = {
   "/": "index",
   "/hakkimizda": "hakkimizda",
+  "/havacilik": "havacilik",
   "/misyon-vizyon": "misyon-vizyon",
   "/yonetim-kurulu": "yonetim-kurulu",
   "/politikalar": "politikalar",

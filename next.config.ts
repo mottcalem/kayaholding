@@ -1,21 +1,4 @@
 import type { NextConfig } from "next";
-import path from "path";
-
-const contentDir = path.join(process.cwd(), "content");
-
-/** Minimal type for dev-only webpack plugin (Next bundles webpack internally). */
-type ContentWatchCompiler = {
-  hooks: {
-    afterCompile: {
-      tap: (
-        name: string,
-        fn: (compilation: {
-          contextDependencies: { add: (dir: string) => void };
-        }) => void
-      ) => void;
-    };
-  };
-};
 
 const phpRoutes = [
   "hakkimizda",
@@ -38,19 +21,7 @@ const phpRoutes = [
 
 const nextConfig: NextConfig = {
   devIndicators: false,
-  webpack(config, { dev, isServer }) {
-    if (dev && isServer) {
-      config.plugins.push({
-        apply(compiler: ContentWatchCompiler) {
-          compiler.hooks.afterCompile.tap("WatchContentHtml", (compilation) => {
-            compilation.contextDependencies.add(contentDir);
-          });
-        },
-      });
-    }
-    return config;
-  },
-    async redirects() {
+  async redirects() {
     return [
       { source: "/index.php", destination: "/", permanent: true },
       { source: "/basinda-biz", destination: "/haberler", permanent: true },

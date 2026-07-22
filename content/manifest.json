@@ -34,6 +34,13 @@
     "route": "/hakkimizda",
     "hasScripts": false
   },
+  "havacilik": {
+    "title": "Havacılık",
+    "pageId": "havacilik",
+    "parentPageId": "kurumsal",
+    "route": "/havacilik",
+    "hasScripts": false
+  },
   "hizmet": {
     "title": "Hizmet Sektörü",
     "pageId": "hizmet",

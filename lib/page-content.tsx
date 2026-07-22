@@ -18,6 +18,7 @@ export function normalizeLegacyHtml(raw: string): string {
 export type PageSlug =
   | "index"
   | "hakkimizda"
+  | "havacilik"
   | "misyon-vizyon"
   | "yonetim-kurulu"
   | "politikalar"
