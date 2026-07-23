@@ -10,6 +10,11 @@ import {
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  if (pathname.startsWith("/api/")) {
+    return NextResponse.next();
+  }
+
   const locale = resolveLocaleFromRequest(
     request.cookies.get(LOCALE_COOKIE)?.value,
     request.headers.get("accept-language")
@@ -29,6 +34,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|favicon\\.jpg|logo\\.jpg|img/|fonts/|.*\\.(?:jpg|jpeg|gif|webp|png|svg|ico|woff2|woff|ttf|mp4)$).*)",
+    "/((?!api/|_next/static|_next/image|favicon\\.jpg|logo\\.jpg|img/|fonts/|.*\\.(?:jpg|jpeg|gif|webp|png|svg|ico|woff2|woff|ttf|mp4)$).*)",
   ],
 };

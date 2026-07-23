@@ -2,14 +2,17 @@
 
 import { useEffect } from "react";
 import type { PageSlug } from "@/lib/page-content";
+import type { Locale } from "@/lib/locale";
 import { ContactLocations } from "@/components/ContactLocations";
+import { SiteFormSubmit } from "@/components/SiteFormSubmit";
 
 type Props = {
   slug: PageSlug;
+  locale: Locale;
   scripts: string[];
 };
 
-export function PageScripts({ slug, scripts }: Props) {
+export function PageScripts({ slug, locale, scripts }: Props) {
   useEffect(() => {
     if (slug === "politikalar") {
       const sections = document.querySelectorAll(".policy-article");
@@ -39,7 +42,16 @@ export function PageScripts({ slug, scripts }: Props) {
   }, [slug, scripts]);
 
   if (slug === "iletisim") {
-    return <ContactLocations />;
+    return (
+      <>
+        <SiteFormSubmit slug={slug} locale={locale} />
+        <ContactLocations />
+      </>
+    );
+  }
+
+  if (slug === "kariyer") {
+    return <SiteFormSubmit slug={slug} locale={locale} />;
   }
 
   return null;

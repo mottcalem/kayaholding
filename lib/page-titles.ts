@@ -20,7 +20,7 @@ const titles: Record<Locale, Record<PageSlug, string>> = {
     "haber-detay": "Haber Detayı",
     kariyer: "Kariyer",
     iletisim: "İletişim",
-    statik: "Gizlilik Politikası",
+    statik: "Kişisel Verilerin Korunması",
   },
   en: {
     index: "Home",
@@ -40,7 +40,7 @@ const titles: Record<Locale, Record<PageSlug, string>> = {
     "haber-detay": "News Detail",
     kariyer: "Careers",
     iletisim: "Contact",
-    statik: "Privacy Policy",
+    statik: "Personal Data Protection",
   },
 };
 

@@ -11,7 +11,7 @@ const footerCopy = {
     corporate: "Kurumsal",
     sectors: "Sektörler",
     rights: "© 2026 Kaya Holding. Tüm Hakları Saklıdır.",
-    privacy: "Gizlilik Politikası",
+    privacy: "Kişisel Verilerin Korunması",
     corporateLinks: [
       { path: "/hakkimizda", label: "Hakkımızda" },
       { path: "/misyon-vizyon", label: "Misyon & Vizyon" },
@@ -37,7 +37,7 @@ const footerCopy = {
     corporate: "Corporate",
     sectors: "Sectors",
     rights: "© 2026 Kaya Holding. All rights reserved.",
-    privacy: "Privacy Policy",
+    privacy: "Personal Data Protection",
     corporateLinks: [
       { path: "/hakkimizda", label: "About Us" },
       { path: "/misyon-vizyon", label: "Mission & Vision" },

@@ -31,6 +31,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/index.php", destination: "/", permanent: true },
+      {
+        source: "/kisisel-verilerin-korunmasi",
+        destination: "/statik",
+        permanent: true,
+      },
+      {
+        source: "/en/kisisel-verilerin-korunmasi",
+        destination: "/en/statik",
+        permanent: true,
+      },
       { source: "/basinda-biz", destination: "/haberler", permanent: true },
       ...phpRoutes.map((route) => ({
         source: `/${route}.php`,

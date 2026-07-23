@@ -70,8 +70,11 @@ export function PageContent({
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      {(scripts.length > 0 || slug === "iletisim" || slug === "politikalar") && (
-        <PageScripts scripts={scripts} slug={slug} />
+      {(scripts.length > 0 ||
+        slug === "iletisim" ||
+        slug === "kariyer" ||
+        slug === "politikalar") && (
+        <PageScripts scripts={scripts} slug={slug} locale={locale} />
       )}
     </>
   );
