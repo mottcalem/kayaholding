@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { PageContent } from "@/lib/page-content";
+import { SitePage } from "@/lib/site-page";
 
 export const metadata: Metadata = {
   title: "Sosyal Sorumluluk",
 };
 
 export default function Page() {
-  return <PageContent slug="sosyal-sorumluluk" />;
+  return <SitePage slug="sosyal-sorumluluk" locale="tr" />;
 }

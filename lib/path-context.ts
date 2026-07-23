@@ -1,4 +1,5 @@
 import type { NavContext } from "@/lib/navigation";
+import { pathnameWithoutLocale } from "@/lib/locale";
 
 const kurumsalIds = new Set([
   "hakkimizda",
@@ -40,7 +41,8 @@ const pathToPageId: Record<string, string> = {
 };
 
 export function pathToNavContext(pathname: string): NavContext {
-  const pageId = pathToPageId[pathname] ?? "";
+  const normalized = pathnameWithoutLocale(pathname);
+  const pageId = pathToPageId[normalized] ?? "";
   let parentPageId = "";
   if (kurumsalIds.has(pageId)) parentPageId = "kurumsal";
   if (faaliyetIds.has(pageId)) parentPageId = "faaliyetler";

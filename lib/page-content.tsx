@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { unstable_noStore as noStore } from "next/cache";
 import { PageScripts } from "@/components/PageScripts";
+import type { Locale } from "@/lib/locale";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
@@ -35,21 +36,36 @@ export type PageSlug =
   | "iletisim"
   | "statik";
 
-function readHtml(slug: string): string {
-  const raw = fs.readFileSync(path.join(CONTENT_DIR, `${slug}.html`), "utf8");
+function readHtml(slug: string, locale: Locale): string {
+  const raw = fs.readFileSync(
+    path.join(CONTENT_DIR, locale, `${slug}.html`),
+    "utf8"
+  );
   return normalizeLegacyHtml(raw);
 }
 
-function readScripts(slug: string): string[] {
-  const scriptPath = path.join(CONTENT_DIR, `${slug}.scripts.json`);
-  if (!fs.existsSync(scriptPath)) return [];
+function readScripts(slug: string, locale: Locale): string[] {
+  const scriptPath = path.join(CONTENT_DIR, locale, `${slug}.scripts.json`);
+  if (!fs.existsSync(scriptPath)) {
+    const fallback = path.join(CONTENT_DIR, "tr", `${slug}.scripts.json`);
+    if (locale !== "tr" && fs.existsSync(fallback)) {
+      return JSON.parse(fs.readFileSync(fallback, "utf8")) as string[];
+    }
+    return [];
+  }
   return JSON.parse(fs.readFileSync(scriptPath, "utf8")) as string[];
 }
 
-export function PageContent({ slug }: { slug: PageSlug }) {
+export function PageContent({
+  slug,
+  locale = "tr",
+}: {
+  slug: PageSlug;
+  locale?: Locale;
+}) {
   noStore();
-  const html = readHtml(slug);
-  const scripts = readScripts(slug);
+  const html = readHtml(slug, locale);
+  const scripts = readScripts(slug, locale);
 
   return (
     <>

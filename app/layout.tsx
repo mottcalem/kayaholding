@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
+import { DocumentLang } from "@/components/DocumentLang";
 import { Footer } from "@/components/Footer";
 import { SiteScripts } from "@/components/SiteScripts";
 import { plusJakartaSans } from "@/lib/fonts";
@@ -27,6 +28,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className={plusJakartaSans.className} suppressHydrationWarning>
+        <DocumentLang />
         <Header />
         {children}
         <Footer />

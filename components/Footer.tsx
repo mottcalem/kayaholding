@@ -1,6 +1,69 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { getLocaleFromPathname, localizeHref } from "@/lib/locale";
+
+const footerCopy = {
+  tr: {
+    blurb:
+      "Türkiye'nin geleceğine yatırım yapan kurumsal ve vizyoner güç. Yarım asırlık köklü geçmişimizle sürdürülebilir büyüme adımları atıyoruz.",
+    corporate: "Kurumsal",
+    sectors: "Sektörler",
+    rights: "© 2026 Kaya Holding. Tüm Hakları Saklıdır.",
+    privacy: "Gizlilik Politikası",
+    corporateLinks: [
+      { path: "/hakkimizda", label: "Hakkımızda" },
+      { path: "/misyon-vizyon", label: "Misyon & Vizyon" },
+      { path: "/yonetim-kurulu", label: "Yönetim Kurulu" },
+      { path: "/politikalar", label: "Politikalar" },
+      { path: "/sosyal-sorumluluk", label: "Sosyal Sorumluluk" },
+      { path: "/haberler", label: "Haber & Medya" },
+      { path: "/kariyer", label: "Kariyer" },
+      { path: "/iletisim", label: "İletişim" },
+    ],
+    sectorLinks: [
+      { path: "/turizm", label: "Turizm" },
+      { path: "/insaat-gayrimenkul", label: "İnşaat & Gayrimenkul" },
+      { path: "/perakende", label: "Perakende" },
+      { path: "/hizmet", label: "Hizmet" },
+      { path: "/enerji", label: "Enerji" },
+      { path: "/tarim", label: "Tarım" },
+    ],
+  },
+  en: {
+    blurb:
+      "A corporate and visionary force investing in Turkey's future. With more than half a century of heritage, we continue to grow sustainably.",
+    corporate: "Corporate",
+    sectors: "Sectors",
+    rights: "© 2026 Kaya Holding. All rights reserved.",
+    privacy: "Privacy Policy",
+    corporateLinks: [
+      { path: "/hakkimizda", label: "About Us" },
+      { path: "/misyon-vizyon", label: "Mission & Vision" },
+      { path: "/yonetim-kurulu", label: "Board of Directors" },
+      { path: "/politikalar", label: "Policies" },
+      { path: "/sosyal-sorumluluk", label: "Social Responsibility" },
+      { path: "/haberler", label: "News & Media" },
+      { path: "/kariyer", label: "Careers" },
+      { path: "/iletisim", label: "Contact" },
+    ],
+    sectorLinks: [
+      { path: "/turizm", label: "Tourism" },
+      { path: "/insaat-gayrimenkul", label: "Construction & Real Estate" },
+      { path: "/perakende", label: "Retail" },
+      { path: "/hizmet", label: "Services" },
+      { path: "/enerji", label: "Energy" },
+      { path: "/tarim", label: "Agriculture" },
+    ],
+  },
+} as const;
 
 export function Footer() {
+  const pathname = usePathname();
+  const locale = getLocaleFromPathname(pathname);
+  const copy = footerCopy[locale];
+
   return (
     <>
       <div className="brand-section">
@@ -33,61 +96,31 @@ export function Footer() {
                   paddingRight: "20px",
                 }}
               >
-                Türkiye&apos;nin geleceğine yatırım yapan kurumsal ve vizyoner
-                güç. Yarım asırlık köklü geçmişimizle sürdürülebilir büyüme
-                adımları atıyoruz.
+                {copy.blurb}
               </p>
             </div>
             <div className="footer-col">
-              <h4>Kurumsal</h4>
+              <h4>{copy.corporate}</h4>
               <ul className="footer-links two-cols">
-                <li>
-                  <Link href="/hakkimizda">Hakkımızda</Link>
-                </li>
-                <li>
-                  <Link href="/misyon-vizyon">Misyon & Vizyon</Link>
-                </li>
-                <li>
-                  <Link href="/yonetim-kurulu">Yönetim Kurulu</Link>
-                </li>
-                <li>
-                  <Link href="/politikalar">Politikalar</Link>
-                </li>
-                <li>
-                  <Link href="/sosyal-sorumluluk">Sosyal Sorumluluk</Link>
-                </li>
-                <li>
-                  <Link href="/haberler">Haber & Medya</Link>
-                </li>
-                <li>
-                  <Link href="/kariyer">Kariyer</Link>
-                </li>
-                <li>
-                  <Link href="/iletisim">İletişim</Link>
-                </li>
+                {copy.corporateLinks.map((item) => (
+                  <li key={item.path}>
+                    <Link href={localizeHref(item.path, locale)}>
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="footer-col">
-              <h4>Sektörler</h4>
+              <h4>{copy.sectors}</h4>
               <ul className="footer-links two-cols">
-                <li>
-                  <Link href="/turizm">Turizm</Link>
-                </li>
-                <li>
-                  <Link href="/insaat-gayrimenkul">İnşaat & Gayrimenkul</Link>
-                </li>
-                <li>
-                  <Link href="/perakende">Perakende</Link>
-                </li>
-                <li>
-                  <Link href="/hizmet">Hizmet</Link>
-                </li>
-                <li>
-                  <Link href="/enerji">Enerji</Link>
-                </li>
-                <li>
-                  <Link href="/tarim">Tarım</Link>
-                </li>
+                {copy.sectorLinks.map((item) => (
+                  <li key={item.path}>
+                    <Link href={localizeHref(item.path, locale)}>
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -104,12 +137,12 @@ export function Footer() {
             }}
           >
             <div style={{ display: "flex", gap: "15px" }}>
-              <p>&copy; 2026 Kaya Holding. Tüm Hakları Saklıdır.</p>
+              <p>{copy.rights}</p>
               <Link
-                href="/statik"
+                href={localizeHref("/statik", locale)}
                 style={{ color: "#999", textDecoration: "underline" }}
               >
-                Gizlilik Politikası
+                {copy.privacy}
               </Link>
             </div>
             <div className="footer-social">

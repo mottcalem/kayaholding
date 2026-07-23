@@ -124,6 +124,7 @@ header {
     color: var(--dark);
     border: 1px solid var(--border);
     cursor: pointer;
+    text-decoration: none;
 }
 .lang-switcher:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
 .lang-flag { width: 18px; height: 18px; border-radius: 50%; object-fit: cover; }

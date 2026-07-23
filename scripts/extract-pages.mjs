@@ -3,7 +3,7 @@ import path from "path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const PHP_DIR = path.join(ROOT, "legacy-php");
-const CONTENT_DIR = path.join(ROOT, "content");
+const CONTENT_DIR = path.join(ROOT, "content", "tr");
 
 const PAGE_FILES = fs
   .readdirSync(PHP_DIR)
@@ -99,4 +99,4 @@ fs.writeFileSync(
   JSON.stringify(manifest, null, 2)
 );
 
-console.log(`Extracted ${PAGE_FILES.length} pages to content/`);
+console.log(`Extracted ${PAGE_FILES.length} pages to content/tr/`);

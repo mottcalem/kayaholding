@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { AirPhotoGallery } from "@/components/AirPhotoGallery";
-import { PageContent } from "@/lib/page-content";
+import { SitePage } from "@/lib/site-page";
 
 export const metadata: Metadata = {
   title: "Havacılık",
 };
 
 export default function Page() {
-  return (
-    <>
-      <PageContent slug="havacilik" />
-      <AirPhotoGallery />
-    </>
-  );
+  return <SitePage slug="havacilik" locale="tr" />;
 }

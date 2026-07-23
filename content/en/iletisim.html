@@ -1,0 +1,61 @@
+<div class="page-hero">
+        <div class="container">
+            <h1 class="clash">Contact</h1>
+            <p>For your feedback, suggestions, and information requests, you can complete the form or contact our offices and properties directly.</p>
+        </div>
+    </div>
+
+    <!-- Form & Map Section -->
+    <section class="contact-main-section">
+        <div class="container">
+            <div class="contact-layout-grid">
+                
+                <!-- Contact Form (Kariyer sayfasındaki uyumlu kutu) -->
+                <div class="app-form-box" style="border: 1px solid var(--border); padding: 40px; border-radius: 24px; box-shadow: 0 15px 35px rgba(0,0,0,0.03);">
+                    <h3>Contact Form</h3>
+                    <p>Please complete the form in full so we can assist you more quickly.</p>
+                    
+                    <form action="#" method="POST">
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="name">Full Name / Company Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name or organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="ornek@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="What would you like to contact us about?">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="You may write your message in detail..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: 100%; justify-content: center; padding: 20px; font-size: 16px;">Send Message &rarr;</button>
+                    </form>
+                </div>
+
+                <!-- Google Map -->
+                <div class="contact-map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.3487549658985!2d29.042511876585813!3d41.1487407107632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e2d25fcfad%3A0x13e726f697c00d2b!2sKaya%20Holding!5e0!3m2!1str!2str!4v1784725753553!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations (tabs: offices & hotels) -->
+    <section class="locations-section">
+        <div class="container">
+            <h2 class="section-title">Our Contact Points</h2>
+            <div id="contact-locations-mount"></div>
+        </div>
+    </section>

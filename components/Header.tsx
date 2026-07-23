@@ -6,8 +6,15 @@ import { useEffect, useState } from "react";
 import {
   activeDropdownStyle,
   activeStyle,
-  navLinks,
+  getNavLabels,
+  getNavLinks,
 } from "@/lib/navigation";
+import {
+  getLocaleFromPathname,
+  localizeHref,
+  setLocaleCookie,
+  switchLocalePath,
+} from "@/lib/locale";
 import { pathToNavContext } from "@/lib/path-context";
 
 const Chevron = () => (
@@ -28,10 +35,24 @@ const Chevron = () => (
 
 export function Header() {
   const pathname = usePathname();
+  const locale = getLocaleFromPathname(pathname);
+  const labels = getNavLabels(locale);
+  const navLinks = getNavLinks(locale);
   const { pageId, parentPageId } = pathToNavContext(pathname);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileKurumsalOpen, setMobileKurumsalOpen] = useState(false);
   const [mobileFaaliyetOpen, setMobileFaaliyetOpen] = useState(false);
+
+  const homeHref = localizeHref("/", locale);
+  const otherLocale = locale === "tr" ? "en" : "tr";
+  const switchHref = switchLocalePath(pathname, otherLocale);
+  const switchLabel = otherLocale === "en" ? "EN" : "TR";
+  const switchFlag =
+    otherLocale === "en"
+      ? "https://flagcdn.com/w40/gb.png"
+      : "https://flagcdn.com/w40/tr.png";
+  const switchAlt = otherLocale === "en" ? "English" : "Türkçe";
+  const persistLocaleChoice = () => setLocaleCookie(otherLocale);
 
   useEffect(() => {
     document.body.classList.toggle("menu-open", menuOpen);
@@ -47,14 +68,14 @@ export function Header() {
       <header>
         <div className="container">
           <div className="header-inner">
-            <Link href="/" className="logo">
+            <Link href={homeHref} className="logo">
               <img src="/logo.jpg" alt="Kaya Holding Logo" />
             </Link>
 
             <div className="header-right">
               <nav className="nav-desktop">
-                <Link href="/" style={activeStyle(pageId === "index")}>
-                  Ana Sayfa
+                <Link href={homeHref} style={activeStyle(pageId === "index")}>
+                  {labels.home}
                 </Link>
                 <div className="dropdown">
                   <a
@@ -63,7 +84,7 @@ export function Header() {
                     style={activeStyle(parentPageId === "kurumsal")}
                     onClick={(e) => e.preventDefault()}
                   >
-                    Kurumsal <Chevron />
+                    {labels.kurumsal} <Chevron />
                   </a>
                   <div className="dropdown-menu">
                     {navLinks.kurumsal.map((item) => (
@@ -84,7 +105,7 @@ export function Header() {
                     style={activeStyle(parentPageId === "faaliyetler")}
                     onClick={(e) => e.preventDefault()}
                   >
-                    Faaliyetler <Chevron />
+                    {labels.faaliyetler} <Chevron />
                   </a>
                   <div className="dropdown-menu">
                     {navLinks.faaliyetler.map((item) => (
@@ -99,33 +120,37 @@ export function Header() {
                   </div>
                 </div>
                 <Link
-                  href="/haberler"
+                  href={localizeHref("/haberler", locale)}
                   style={activeStyle(
                     pageId === "haberler" || pageId === "haber-detay"
                   )}
                 >
-                  Bizden Haberler
-                </Link>
-                <Link href="/kariyer" style={activeStyle(pageId === "kariyer")}>
-                  Kariyer
+                  {labels.news}
                 </Link>
                 <Link
-                  href="/iletisim"
+                  href={localizeHref("/kariyer", locale)}
+                  style={activeStyle(pageId === "kariyer")}
+                >
+                  {labels.career}
+                </Link>
+                <Link
+                  href={localizeHref("/iletisim", locale)}
                   style={activeStyle(pageId === "iletisim")}
                 >
-                  İletişim
+                  {labels.contact}
                 </Link>
               </nav>
 
               <div className="header-tools nav-desktop">
-                <div className="lang-switcher">
-                  <img
-                    src="https://flagcdn.com/w40/gb.png"
-                    className="lang-flag"
-                    alt="English"
-                  />
-                  <span>EN</span>
-                </div>
+                <Link
+                  href={switchHref}
+                  className="lang-switcher"
+                  aria-label={switchAlt}
+                  onClick={persistLocaleChoice}
+                >
+                  <img src={switchFlag} className="lang-flag" alt="" />
+                  <span>{switchLabel}</span>
+                </Link>
               </div>
 
               <div
@@ -133,7 +158,7 @@ export function Header() {
                 id="nav-toggle"
                 role="button"
                 tabIndex={0}
-                aria-label="Menüyü aç"
+                aria-label={locale === "en" ? "Open menu" : "Menüyü aç"}
                 onClick={() => setMenuOpen((o) => !o)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") setMenuOpen((o) => !o);
@@ -164,7 +189,7 @@ export function Header() {
         />
         <ul>
           <li>
-            <Link href="/">Ana Sayfa</Link>
+            <Link href={homeHref}>{labels.home}</Link>
           </li>
           <li
             className={`mobile-dropdown${mobileKurumsalOpen ? " active" : ""}`}
@@ -177,7 +202,7 @@ export function Header() {
                 setMobileKurumsalOpen((o) => !o);
               }}
             >
-              Kurumsal{" "}
+              {labels.kurumsal}{" "}
               <span className="arrow">
                 <svg
                   width="18"
@@ -212,7 +237,7 @@ export function Header() {
                 setMobileFaaliyetOpen((o) => !o);
               }}
             >
-              Faaliyetler{" "}
+              {labels.faaliyetler}{" "}
               <span className="arrow">
                 <svg
                   width="18"
@@ -237,25 +262,23 @@ export function Header() {
             </ul>
           </li>
           <li>
-            <Link href="/haberler">Bizden Haberler</Link>
+            <Link href={localizeHref("/haberler", locale)}>{labels.news}</Link>
           </li>
           <li>
-            <Link href="/kariyer">Kariyer</Link>
+            <Link href={localizeHref("/kariyer", locale)}>{labels.career}</Link>
           </li>
           <li>
-            <Link href="/iletisim">İletişim</Link>
+            <Link href={localizeHref("/iletisim", locale)}>
+              {labels.contact}
+            </Link>
           </li>
         </ul>
 
         <div className="mobile-tools">
-          <div className="lang-switcher">
-            <img
-              src="https://flagcdn.com/w40/gb.png"
-              className="lang-flag"
-              alt="English"
-            />
-            <span>EN</span>
-          </div>
+          <Link href={switchHref} className="lang-switcher" aria-label={switchAlt} onClick={persistLocaleChoice}>
+            <img src={switchFlag} className="lang-flag" alt="" />
+            <span>{switchLabel}</span>
+          </Link>
         </div>
       </div>
     </>

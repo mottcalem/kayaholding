@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { PageContent } from "@/lib/page-content";
+import { SitePage } from "@/lib/site-page";
 
 export const metadata: Metadata = {
   title: "Ana Sayfa",
 };
 
 export default function HomePage() {
-  return <PageContent slug="index" />;
+  return <SitePage slug="index" locale="tr" />;
 }
