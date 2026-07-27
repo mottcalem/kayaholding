@@ -17,7 +17,6 @@
                     <ul class="footer-links two-cols">
                         <li><a href="hakkimizda.php">Hakkımızda</a></li>
                         <li><a href="misyon-vizyon.php">Misyon & Vizyon</a></li>
-                        <li><a href="yonetim-kurulu.php">Yönetim Kurulu</a></li>
                         <li><a href="politikalar.php">Politikalar</a></li>
                         <li><a href="sosyal-sorumluluk.php">Sosyal Sorumluluk</a></li>
                         <li><a href="haberler.php">Haber & Medya</a></li>

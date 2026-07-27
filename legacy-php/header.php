@@ -37,7 +37,6 @@ if (!isset($parent_page_id)) {
                             <div class="dropdown-menu">
                                 <a href="hakkimizda.php" <?php if ($page_id === 'hakkimizda') echo 'style="color: var(--primary);"'; ?>>Hakkımızda</a>
                                 <a href="misyon-vizyon.php" <?php if ($page_id === 'misyon-vizyon') echo 'style="color: var(--primary);"'; ?>>Misyon ve Vizyon</a>
-                                <a href="yonetim-kurulu.php" <?php if ($page_id === 'yonetim-kurulu') echo 'style="color: var(--primary);"'; ?>>Yönetim Kurulu</a>
                                 <a href="politikalar.php" <?php if ($page_id === 'politikalar') echo 'style="color: var(--primary);"'; ?>>Politikalar</a>
                                 <a href="sosyal-sorumluluk.php" <?php if ($page_id === 'sosyal-sorumluluk') echo 'style="color: var(--primary);"'; ?>>Sosyal Sorumluluk</a>
                             </div>
@@ -83,7 +82,6 @@ if (!isset($parent_page_id)) {
                 <ul class="mobile-submenu">
                     <li><a href="hakkimizda.php">Hakkımızda</a></li>
                     <li><a href="misyon-vizyon.php">Misyon ve Vizyon</a></li>
-                    <li><a href="yonetim-kurulu.php">Yönetim Kurulu</a></li>
                     <li><a href="politikalar.php">Politikalar</a></li>
                     <li><a href="sosyal-sorumluluk.php">Sosyal Sorumluluk</a></li>
                 </ul>

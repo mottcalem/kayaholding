@@ -124,12 +124,5 @@
     "parentPageId": "faaliyetler",
     "route": "/turizm",
     "hasScripts": false
-  },
-  "yonetim-kurulu": {
-    "title": "Yönetim Kurulu",
-    "pageId": "yonetim-kurulu",
-    "parentPageId": "kurumsal",
-    "route": "/yonetim-kurulu",
-    "hasScripts": false
   }
 }

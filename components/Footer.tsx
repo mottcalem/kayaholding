@@ -15,7 +15,6 @@ const footerCopy = {
     corporateLinks: [
       { path: "/hakkimizda", label: "Hakkımızda" },
       { path: "/misyon-vizyon", label: "Misyon & Vizyon" },
-      { path: "/yonetim-kurulu", label: "Yönetim Kurulu" },
       { path: "/politikalar", label: "Politikalar" },
       { path: "/sosyal-sorumluluk", label: "Sosyal Sorumluluk" },
       { path: "/haberler", label: "Haber & Medya" },
@@ -41,7 +40,6 @@ const footerCopy = {
     corporateLinks: [
       { path: "/hakkimizda", label: "About Us" },
       { path: "/misyon-vizyon", label: "Mission & Vision" },
-      { path: "/yonetim-kurulu", label: "Board of Directors" },
       { path: "/politikalar", label: "Policies" },
       { path: "/sosyal-sorumluluk", label: "Social Responsibility" },
       { path: "/haberler", label: "News & Media" },

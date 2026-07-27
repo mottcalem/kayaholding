@@ -5,7 +5,6 @@ const kurumsalIds = new Set([
   "hakkimizda",
   "havacilik",
   "misyon-vizyon",
-  "yonetim-kurulu",
   "politikalar",
   "sosyal-sorumluluk",
 ]);
@@ -24,7 +23,6 @@ const pathToPageId: Record<string, string> = {
   "/hakkimizda": "hakkimizda",
   "/havacilik": "havacilik",
   "/misyon-vizyon": "misyon-vizyon",
-  "/yonetim-kurulu": "yonetim-kurulu",
   "/politikalar": "politikalar",
   "/sosyal-sorumluluk": "sosyal-sorumluluk",
   "/turizm": "turizm",

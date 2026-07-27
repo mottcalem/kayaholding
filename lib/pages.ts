@@ -5,7 +5,6 @@ export const PAGE_SLUGS: PageSlug[] = [
   "hakkimizda",
   "havacilik",
   "misyon-vizyon",
-  "yonetim-kurulu",
   "politikalar",
   "sosyal-sorumluluk",
   "turizm",

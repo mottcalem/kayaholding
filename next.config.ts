@@ -3,7 +3,6 @@ import type { NextConfig } from "next";
 const phpRoutes = [
   "hakkimizda",
   "misyon-vizyon",
-  "yonetim-kurulu",
   "politikalar",
   "sosyal-sorumluluk",
   "turizm",

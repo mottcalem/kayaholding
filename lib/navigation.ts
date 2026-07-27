@@ -20,7 +20,6 @@ const navData = {
     kurumsalLinks: [
       { path: "/hakkimizda", label: "Hakkımızda", pageId: "hakkimizda" },
       { path: "/misyon-vizyon", label: "Misyon ve Vizyon", pageId: "misyon-vizyon" },
-      { path: "/yonetim-kurulu", label: "Yönetim Kurulu", pageId: "yonetim-kurulu" },
       { path: "/politikalar", label: "Politikalar", pageId: "politikalar" },
       {
         path: "/sosyal-sorumluluk",
@@ -51,7 +50,6 @@ const navData = {
     kurumsalLinks: [
       { path: "/hakkimizda", label: "About Us", pageId: "hakkimizda" },
       { path: "/misyon-vizyon", label: "Mission & Vision", pageId: "misyon-vizyon" },
-      { path: "/yonetim-kurulu", label: "Board of Directors", pageId: "yonetim-kurulu" },
       { path: "/politikalar", label: "Policies", pageId: "politikalar" },
       {
         path: "/sosyal-sorumluluk",

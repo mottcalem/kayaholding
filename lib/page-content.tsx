@@ -21,7 +21,6 @@ export type PageSlug =
   | "hakkimizda"
   | "havacilik"
   | "misyon-vizyon"
-  | "yonetim-kurulu"
   | "politikalar"
   | "sosyal-sorumluluk"
   | "turizm"
