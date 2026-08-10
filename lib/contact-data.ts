@@ -57,7 +57,7 @@ export const officeLocations: ContactLocation[] = [
     fax: null,
   },
   {
-    title: "DORUKKAYA PETROL",
+    title: "Kaya Petrol",
     address: "Ankara - Bolu TEM Otoyolu 110. km Bolu / Türkiye",
     phone: "+90 (374) 325 10 61",
     fax: "+90 (374) 325 10 69",

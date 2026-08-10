@@ -39,9 +39,9 @@ include 'header.php';
             <div class="timeline-container">
                 <div class="timeline">
                     <div class="timeline-item">
-                        <span class="timeline-year">1988 - 2006</span>
+                        <span class="timeline-year">1976 – 2006</span>
                         <div class="timeline-content">
-                            <p>1988 yılında Kaya Side Oteli ile başlayan otel inşaatları serüveni; 1990’da DorukKaya Oteli ve mekanik tesisleri, 1996’da Green Park Oteli ve aynı yıl tamamlanan Alanya Kaya Oteli ile devam etti.</p>
+                            <p>1976 yılında temelleri atılan inşaat yolculuğumuz, 1988 yılında Kaya Side Oteli ile otelcilik yatırımlarına dönüşerek büyümeye devam etti. 1988 yılında Kaya Side Oteli ile başlayan otel inşaatları serüveni; 1990’da DorukKaya Oteli ve mekanik tesisleri, 1996’da Green Park Oteli ve aynı yıl tamamlanan Alanya Kaya Oteli ile devam etti.</p>
                             <p>1998 yılında Kaya Belek, 2000 yılında Kaya Select Oteli, 2002 yılında Kaya Ramada Plaza Oteli ve 2006’da Kaya Millenium İş Merkezi başarıyla tamamlandı.</p>
                         </div>
                     </div>
@@ -84,11 +84,13 @@ include 'header.php';
                     </div>
 
                     <div class="timeline-item">
-                        <span class="timeline-year">2023 - Günümüz</span>
+                        <span class="timeline-year">2023 – Günümüz</span>
                         <div class="timeline-content">
-                            <p>2023 yılında Palazzo Mansions projesi tamamlanarak markanın lüks segmentteki yatırımları taçlandırıldı. 2024 yılı itibarıyla Kaya Residence projesinin inşaatı başladı ve çalışmaları devam etmektedir.</p>
-                            <p>Ayrıca, Kuzey Kıbrıs’ta konumlanacak olan yeni nesil turizm yatırımı Kaya Palazzo Bafra projesi de inşaat aşamasındadır.</p>
-                            <p>Son olarak, Kaya Palazzo Hotel & Convention – Ankara projesi tüm hızıyla devam etmekte olup, başkentin iş ve turizm hayatına değer katması hedeflenmektedir.</p>
+                            <p>2023 yılında Palazzo Mansions projesi tamamlanarak markanın lüks segmentteki yatırımları taçlandırıldı.</p>
+                            <p>2024 yılında, Kuzey Kıbrıs’ın gözde yatırım bölgesi Bafra’da, denize yakın konumuyla öne çıkan Kaya Residences projesinin satış süreci başarıyla devam etmektedir.</p>
+                            <p>2024 yılı itibarıyla, Kaya Holding’in global yatırımları arasında yer alan Kaya Great Northern Hotel London, misafirlerini ağırlamaya başlayarak uluslararası büyüme vizyonunun önemli bir parçası olmuştur.</p>
+                            <p>Kuzey Kıbrıs’ta hayata geçirilecek yeni nesil turizm yatırımı Kaya Palazzo Bafra projesinin inşaat çalışmaları tüm hızıyla devam etmektedir.</p>
+                            <p>Aynı şekilde, Kaya Palazzo Hotel & Convention Ankara projesinin inşaatı da planlanan takvim doğrultusunda sürdürülmekte olup, tamamlandığında başkentin iş, kongre ve turizm hayatına değer katması hedeflenmektedir.</p>
                         </div>
                     </div>
                 </div>

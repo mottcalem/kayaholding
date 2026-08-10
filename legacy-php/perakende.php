@@ -46,7 +46,7 @@ include 'header.php';
                         <li><span>Açılış Yılı</span> <strong>2008</strong></li>
                         <li><span>Lokasyon</span> <strong>Bolu</strong></li>
                         <li><span>Fabrika Alanı</span> <strong>8.500 m²</strong></li>
-                        <li><span>Açık Tesis Alanı</span> <strong>1.000 m²</strong></li>
+                        <li><span>Açık Tesis Alanı</span> <strong>4.000 m²</strong></li>
                     </ul>
                     
                     <div class="factory-prod-title">Su Üretim Hattı</div>
@@ -54,7 +54,7 @@ include 'header.php';
                         <tr><td>0,33 - 0,5 Litre</td><td>40.000 bph</td></tr>
                         <tr><td>1,5 Litre</td><td>26.000 bph</td></tr>
                         <tr><td>5 Litre</td><td>6.600 bph</td></tr>
-                        <tr><td>19 Litre PC</td><td>1.150 bph</td></tr>
+                        <tr><td>19 Litre PC</td><td>1.400 bph</td></tr>
                         <tr><td>19 Litre Cam</td><td>750 bph</td></tr>
                     </table>
                     
@@ -78,8 +78,8 @@ include 'header.php';
                         <tr><td>0,33 Litre Cam</td><td>6.000 bph</td></tr>
                         <tr><td>0,75 Litre Cam</td><td>4.000 bph</td></tr>
                         <tr><td>5 Litre</td><td>6.000 bph</td></tr>
-                        <tr><td>19 Litre PC</td><td>2.000 bph</td></tr>
-                        <tr><td>19 Litre Cam</td><td>800 bph</td></tr>
+                        <tr><td>19 Litre PC</td><td>1.400 bph</td></tr>
+                        <tr><td>19 Litre Cam</td><td>750 bph</td></tr>
                     </table>
                     
                     <div class="factory-total">Günlük Üretim Kapasitesi <strong>1.700 Ton</strong></div>
@@ -102,8 +102,8 @@ include 'header.php';
                         <tr><td>1 Litre</td><td>9.000 bph</td></tr>
                         <tr><td>1,5 Litre</td><td>25.000 bph</td></tr>
                         <tr><td>5 Litre</td><td>6.600 bph</td></tr>
-                        <tr><td>19 Litre PC</td><td>1.200 bph</td></tr>
-                        <tr><td>19 Litre Cam</td><td>850 bph</td></tr>
+                        <tr><td>19 Litre PC</td><td>1.400 bph</td></tr>
+                        <tr><td>19 Litre Cam</td><td>750 bph</td></tr>
                     </table>
                     
                     <div class="factory-total">Günlük Üretim Kapasitesi <strong>1.296 Ton</strong></div>

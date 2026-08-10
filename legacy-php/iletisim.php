@@ -76,7 +76,7 @@ include 'header.php';
                         { title: "ABANT SU BOLU FABRİKASI", address: "Abant yolu 15.km Dereceörenköyü Abant - Bolu / Türkiye", phone: "+90 (374) 237 11 61", fax: "+90 (374) 237 11 65" },
                         { title: "ABANT SU GÖLCÜK FABRİKASI", address: "Siretiye Mahallesi, Siretiye Merkez Mevkii, 82 / 2 Gölcük - Kocaeli / Türkiye", phone: "+90 (262) 439 63 41", fax: "+90 (262) 439 63 46" },
                         { title: "ABANT SU BURDUR FABRİKASI", address: "Isparta Yolu Bulvarı Sakarca Mahallesi Karanenik Mevkii No:127 Ağlasun - BURDUR / TÜRKİYE", phone: null, fax: null },
-                        { title: "DORUKKAYA PETROL", address: "Ankara - Bolu TEM Otoyolu 110. km Bolu / Türkiye", phone: "+90 (374) 325 10 61", fax: "+90 (374) 325 10 69" },
+                        { title: "Kaya Petrol", address: "Ankara - Bolu TEM Otoyolu 110. km Bolu / Türkiye", phone: "+90 (374) 325 10 61", fax: "+90 (374) 325 10 69" },
                         { title: "KAYA AIR", address: "İstanbul Atatürk Havalimanı Özel Hangarlar Bölgesi Genel Havacılık Terminali 17 No’lu Hangar, Sefaköy 34295 İstanbul / Türkiye", phone: null, fax: null }
                     ];
 
