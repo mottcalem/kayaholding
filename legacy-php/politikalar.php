@@ -44,6 +44,7 @@ include 'header.php';
                     <!-- Sosyal Sorumluluk Politikası -->
                     <article id="sosyal-sorumluluk" class="policy-article">
                         <h2>Sosyal Sorumluluk Politikası</h2>
+                        <a href="/SurdurulebilirlikPolitikasi.docx.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-bottom: 25px;">Sürdürülebilirlik Politikası (PDF) &rarr;</a>
                         <p>Kaya Holding, iş dünyasındaki başarısını topluma karşı duyduğu sorumluluk bilinciyle tamamlayan bir kurumdur. Kurumsal vatandaşlık yaklaşımımızla; eğitimden çevreye, kültür-sanattan sosyal dayanışmaya kadar birçok alanda sürdürülebilir projeler geliştiriyor, toplumsal refahın artırılmasına uzun vadeli katkı sağlamak başlıca hedefimizdir.</p>
                         <ul>
                             <li><strong>Çocuk Hakları:</strong> Kaya Holding olarak çocukların güvenli, sağlıklı ve destekleyici ortamlarda büyüme hakkını temel bir sorumluluk olarak görüyoruz. Tüm faaliyetlerimizde çocuk haklarına saygılı bir yaklaşım benimsiyor; çocuk işçiliği, ihmal ve istismara karşı sıfır tolerans ilkesiyle hareket ediyoruz. Çalışanlarımızı, iş ortaklarımızı ve paydaşlarımızı bu konuda bilinçlendirmeye önem veriyor; çocukların korunmasına yönelik farkındalık çalışmalarını destekliyoruz. Geleceğin en değerli emaneti olan çocukların haklarını korumayı, sürdürülebilir toplum anlayışımızın vazgeçilmez bir parçası olarak görüyoruz.</li>
@@ -54,6 +55,7 @@ include 'header.php';
                     <!-- Çevreye Duyarlılık Politikası -->
                     <article id="cevre-politikasi" class="policy-article">
                         <h2>Çevreye Duyarlılık Politikası</h2>
+                        <a href="/CevrePolitikamiz.docx.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-bottom: 25px;">Çevre Politikamız (PDF) &rarr;</a>
                         <p>Kaya Holding olarak, yarım asırlık büyümemizi doğaya ve çevreye saygı çerçevesinde şekillendiriyoruz. Gelecek nesillere yaşanabilir bir dünya bırakmak vizyonuyla, operasyonlarımızın çevresel etkilerini uluslararası uyumluluk yasalarıyla en aza indiriyoruz.</p>
                         <ul>
                             <li><strong>Enerji ve İklim Yönetimi:</strong> Kaya Holding olarak iklim değişikliğiyle mücadeleyi kurumsal sorumluluğumuzun önemli bir parçası olarak görüyoruz. Enerji verimliliğini artıran uygulamalar, yenilikçi teknolojiler ve kaynak kullanımını optimize eden çalışmalarla çevresel etkimizi azaltmayı hedefliyoruz. Sera gazı emisyonlarımızı azaltmaya yönelik adımlar atıyor, enerji yönetimini tüm operasyonlarımızda sürdürülebilirlik anlayışıyla ele alıyoruz. Daha düşük çevresel etkiyle faaliyet göstermek ve gelecek nesillere daha yaşanabilir bir dünya bırakmak için çalışıyoruz.</li>
@@ -67,6 +69,7 @@ include 'header.php';
                     <!-- Kalite Politikası -->
                     <article id="kalite-politikasi" class="policy-article">
                         <h2>Kalite Politikası</h2>
+                        <a href="/KalitePolitikasi.docx.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-bottom: 25px;">Kalite Politikası (PDF) &rarr;</a>
                         <p>Müşteri ve paydaşlarımızın beklentilerini en üst düzeyde karşılamak, yenilikçi ve sürekli iyileştirme prensibiyle çalışmak kurumsal kalite anlayışısının temelidir. Tüm sektörlerde, dünya standartlarında hizmet sunmayı taahhüt ediyoruz.</p>
                         <ul>
                             <li><strong>Çalışan Gelişimi ve İnsana Yatırım:</strong> Kaya Holding olarak en değerli kaynağımızın insan olduğuna inanıyoruz. Çalışanlarımızın mesleki gelişimlerini destekleyen eğitimler, kariyer fırsatları ve sürekli öğrenme kültürüyle güçlü bir kurum yapısı oluşturuyoruz. Katılımcı, adil ve saygılı çalışma ortamlarıyla çalışanlarımızın potansiyellerini ortaya koymalarını destekliyoruz. Kurumsal başarımızı, çalışanlarımızın gelişimi ve birlikte ürettiğimiz değerlerle sürdürülebilir kılmayı hedefliyoruz.</li>
