@@ -116,7 +116,7 @@ include 'header.php';
                         <div class="career-content">
                             <h3 class="clash" style="font-size: 32px; margin-bottom: 15px;">Kariyer</h3>
                             <p style="font-size: 16px; opacity: 0.9; line-height: 1.6; margin-bottom: 30px;">Küresel vizyonumuzu paylaşan, yenilikçi ve dinamik ekibimizin bir parçası olun. Yeteneğinizi sınırların ötesine taşıyın.</p>
-                            <a href="#" class="btn-primary" style="background: #fff; color: var(--dark); padding: 14px 28px; font-size: 15px;">Açık Pozisyonlar &rarr;</a>
+                            <a href="/kariyer" class="btn-primary" style="background: #fff; color: var(--dark); padding: 14px 28px; font-size: 15px;">Açık Pozisyonlar &rarr;</a>
                         </div>
                     </div>
                 </div>

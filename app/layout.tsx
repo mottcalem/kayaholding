@@ -7,6 +7,7 @@ import { plusJakartaSans } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kayaholding.com.tr"),
   title: {
     default: "Kaya Holding",
     template: "%s | Kaya Holding",
