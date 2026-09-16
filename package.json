@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next && next dev --turbopack",
-    "dev:webpack": "rm -rf .next && next dev",
-    "dev:watch": "next dev --turbopack",
-    "build": "next build",
+    "generate:sitemap": "tsx scripts/generate-sitemap.ts",
+    "dev": "npm run generate:sitemap && rm -rf .next && next dev --turbopack",
+    "dev:webpack": "npm run generate:sitemap && rm -rf .next && next dev",
+    "dev:watch": "npm run generate:sitemap && next dev --turbopack",
+    "build": "npm run generate:sitemap && next build",
     "start": "next start",
     "lint": "next lint",
     "extract-pages": "node scripts/extract-pages.mjs && node scripts/generate-routes.mjs",
@@ -23,6 +24,7 @@
     "@types/nodemailer": "^8.0.1",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
+    "tsx": "^4.23.13",
     "typescript": "^5.8.3"
   }
 }

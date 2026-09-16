@@ -20,6 +20,32 @@ const phpRoutes = [
 
 const nextConfig: NextConfig = {
   devIndicators: false,
+  async headers() {
+    return [
+      {
+        source: "/sitemap.xml",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/xml; charset=utf-8",
+          },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800",
+          },
+        ],
+      },
+      {
+        source: "/sitemap.xsl",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/xml; charset=utf-8",
+          },
+        ],
+      },
+    ];
+  },
   webpack(config, { dev }) {
     // Avoid corrupted .next/cache/webpack pack files during HMR (MODULE_NOT_FOUND / moduleId errors).
     if (dev) {
