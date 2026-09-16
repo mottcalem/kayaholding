@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { pageTitle } from "@/lib/page-titles";
+import { buildPageMetadata } from "@/lib/page-seo";
 import { isPageSlug } from "@/lib/pages";
 import { SitePage } from "@/lib/site-page";
 
@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!isPageSlug(slug) || slug === "index") {
     return {};
   }
-  return { title: pageTitle("en", slug) };
+  return buildPageMetadata("en", slug);
 }
 
 export default async function EnSlugPage({ params }: Props) {

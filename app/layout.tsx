@@ -4,6 +4,7 @@ import { DocumentLang } from "@/components/DocumentLang";
 import { Footer } from "@/components/Footer";
 import { SiteScripts } from "@/components/SiteScripts";
 import { plusJakartaSans } from "@/lib/fonts";
+import { defaultSiteDescription } from "@/lib/page-seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -11,6 +12,12 @@ export const metadata: Metadata = {
   title: {
     default: "Kaya Holding",
     template: "%s | Kaya Holding",
+  },
+  description: defaultSiteDescription,
+  openGraph: {
+    siteName: "Kaya Holding",
+    type: "website",
+    locale: "tr_TR",
   },
   icons: {
     icon: [{ url: "/favicon.jpg", type: "image/jpeg" }],

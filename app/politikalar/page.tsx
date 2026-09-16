@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/page-seo";
 import { SitePage } from "@/lib/site-page";
 
-export const metadata: Metadata = {
-  title: "Kurumsal Politikalar",
-};
+export const metadata: Metadata = buildPageMetadata("tr", "politikalar");
 
 export default function Page() {
   return <SitePage slug="politikalar" locale="tr" />;
