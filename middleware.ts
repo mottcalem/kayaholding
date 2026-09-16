@@ -11,7 +11,11 @@ import {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (pathname.startsWith("/api/")) {
+  if (
+    pathname.startsWith("/api/") ||
+    pathname === "/sitemap.xml" ||
+    pathname === "/robots.txt"
+  ) {
     return NextResponse.next();
   }
 
@@ -34,6 +38,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!api/|_next/static|_next/image|favicon\\.jpg|logo\\.jpg|img/|fonts/|.*\\.(?:jpg|jpeg|gif|webp|png|svg|ico|woff2|woff|ttf|mp4)$).*)",
+    "/((?!api/|_next/static|_next/image|favicon\\.jpg|logo\\.jpg|img/|fonts/|sitemap\\.xml|robots\\.txt|.*\\.(?:jpg|jpeg|gif|webp|png|svg|ico|woff2|woff|ttf|mp4|pdf)$).*)",
   ],
 };
