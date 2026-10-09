@@ -22,3 +22,6 @@ npm-debug.log*
 
 # legacy static export (reference only)
 /html/
+
+# local archives (GitHub 100MB file limit)
+Arşiv.zip

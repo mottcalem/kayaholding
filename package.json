@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "generate:sitemap": "tsx scripts/generate-sitemap.ts",
-    "dev": "npm run generate:sitemap && rm -rf .next && next dev --turbopack",
-    "dev:webpack": "npm run generate:sitemap && rm -rf .next && next dev",
-    "dev:watch": "npm run generate:sitemap && next dev --turbopack",
+    "dev": "npm run generate:sitemap && rm -rf .next && next dev",
+    "dev:turbopack": "npm run generate:sitemap && rm -rf .next && next dev --turbopack",
+    "dev:watch": "npm run generate:sitemap && next dev",
     "build": "npm run generate:sitemap && next build",
     "start": "next start",
     "lint": "next lint",

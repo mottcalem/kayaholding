@@ -125,15 +125,15 @@ include 'header.php';
                     <div class="stat-label-compact">Yıllık Deneyim</div>
                 </div>
 
-                <!-- 10+ Marka -->
+                <!-- 38 Marka -->
                 <div class="about-stat-item-compact">
-                    <div class="stat-num-compact">10+</div>
+                    <div class="stat-num-compact">38</div>
                     <div class="stat-label-compact">Güçlü Marka</div>
                 </div>
 
                 <!-- 8 Sektör -->
                 <div class="about-stat-item-compact">
-                    <div class="stat-num-compact">8</div>
+                    <div class="stat-num-compact">6</div>
                     <div class="stat-label-compact">Farklı Sektör</div>
                 </div>
 
