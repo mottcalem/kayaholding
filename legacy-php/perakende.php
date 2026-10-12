@@ -120,7 +120,7 @@ include 'header.php';
             <!-- Cam Şişe Ürün -->
             <div class="csr-project-row">
                 <div class="csr-project-img">
-                    <img src="img/abant-ikonik.webp" alt="Abant Cam Şişe">
+                    <img src="img/abant-ikonik.png" alt="Abant Cam Şişe">
                 </div>
                 <div class="csr-project-content">
                     <span class="csr-project-tag">Premium Sunum</span>
