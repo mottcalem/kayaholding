@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { sendSiteMail } from "@/lib/mail";
+import { getMissingMailEnv, sendSiteMail } from "@/lib/mail";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -13,11 +13,29 @@ const sendFailedMessage = (locale: "tr" | "en") =>
     ? "We could not send your message right now. Please try again later or email us directly."
     : "Mesajınız şu an gönderilemedi. Lütfen daha sonra tekrar deneyin veya doğrudan e-posta ile ulaşın.";
 
+function mailNotConfiguredMessage(locale: "tr" | "en", missing: string): string {
+  if (process.env.NODE_ENV === "development") {
+    return locale === "en"
+      ? `Mail is not configured (missing ${missing}). Copy .env.example to .env.local and set SMTP values.`
+      : `E-posta ayarları tanımlı değil (${missing} eksik). .env.example dosyasını .env.local olarak kopyalayıp SMTP bilgilerini girin.`;
+  }
+  return sendFailedMessage(locale);
+}
+
 export async function POST(request: Request) {
   let locale: "tr" | "en" = "tr";
   try {
     const body = await request.json();
     locale = body.locale === "en" ? "en" : "tr";
+
+    const missingMailEnv = getMissingMailEnv();
+    if (missingMailEnv) {
+      console.error("[api/contact] Missing mail env:", missingMailEnv);
+      return NextResponse.json(
+        { error: mailNotConfiguredMessage(locale, missingMailEnv) },
+        { status: 503 },
+      );
+    }
 
     if (clean(body.website, 200)) {
       return NextResponse.json({ ok: true });

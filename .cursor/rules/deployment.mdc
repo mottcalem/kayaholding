@@ -1,0 +1,11 @@
+---
+description: Deployment target — self-hosted Windows server (not Vercel)
+alwaysApply: true
+---
+
+# Deployment
+
+- This project is **not** deployed on Vercel.
+- Production runs on the team's **own Windows server** (self-hosted).
+- Do not suggest Vercel-specific steps (Environment Variables UI, redeploy on Vercel, vercel.app URLs) unless the user explicitly asks about Vercel.
+- For production config (SMTP, env vars, Node/Next.js hosting), refer to **Windows server deployment**: environment variables on the server, IIS/PM2/process manager, or whatever the team uses — and `.env.local` / `.env.example` for local dev only.

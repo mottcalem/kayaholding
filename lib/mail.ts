@@ -12,6 +12,14 @@ function requireEnv(name: string): string {
   return value;
 }
 
+/** Returns the first missing SMTP env var name, or null if mail can be sent. */
+export function getMissingMailEnv(): string | null {
+  if (!env("SMTP_USER")) return "SMTP_USER";
+  if (!env("SMTP_PASS")) return "SMTP_PASS";
+  if (!env("SMTP_TO")) return "SMTP_TO";
+  return null;
+}
+
 /** Google app passwords are 16 chars, often pasted with spaces. */
 function smtpPassword(): string {
   return requireEnv("SMTP_PASS").replace(/\s+/g, "");
