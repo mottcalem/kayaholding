@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { DocumentLang } from "@/components/DocumentLang";
 import { Footer } from "@/components/Footer";
+import { CookieConsent } from "@/components/CookieConsent";
 import { SiteScripts } from "@/components/SiteScripts";
 import { plusJakartaSans } from "@/lib/fonts";
 import { defaultSiteDescription } from "@/lib/page-seo";
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <CookieConsent />
         <SiteScripts />
       </body>
     </html>
